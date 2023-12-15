@@ -1,14 +1,16 @@
 [个人简介/Biography](./index.md)&nbsp; [项目/Project](./project.md)&nbsp; [论文/Publication](./publication.md)&nbsp;  [专利/Patent](./patent.md)&nbsp; [主要荣誉/Honor](./honor.md)&nbsp; [指导学生/My Students](./student.md)
 # 2023
 - Mingsen Du, Xiangwei Wei, Yanxuan, Zheng, **Cun Ji#** : [Multi-feature based network for multivariate time series classification](https://www.sciencedirect.com/science/article/abs/pii/S0020025523005947), Information Sciences.
+- **C Ji**, M Du, Y Wei, Y Hu, S Liu, L Pan, X Zheng: Time series classification with random temporal features, Journal of King Saud University-Computer and Information Sciences
 - Yanxuan Wei, Yunxiang Wang, Mingsen Du, Yupeng Hu, **Cun Ji#** : [Adaptive Shapelet Selection for Time Series Classification](https://ieeexplore.ieee.org/abstract/document/10152664/), CSCWD2023.
+- Xiao, X., Zheng, X., Bian, J., **Ji, C.**, & Cui, X.: [A dynamic and resource sharing virtual network mapping algorithm](https://www.sciencedirect.com/science/article/pii/S235286482200133X), Digital Communications and Networks.
 
 # 2022
 - **Ji, C.**, Hu, Y., Liu, S., Pan, L., Li, B., & Zheng, X. : [Fully Convolutional Networks with Shapelet Features for Time Series Classification](https://www.sciencedirect.com/science/article/abs/pii/S0020025522010532), Information Sciences.
 - **Ji, C.**, Du, M., Hu, Y., Liu, S., Pan, L., & Zheng, X.: [Time series classification based on temporal features](https://www.sciencedirect.com/science/article/abs/pii/S1568494622005889), Applied Soft Computing.
 - Guo, G., Gao, P., Zheng, X., & **Ji, C.**: Multimodal Emotion Recognition Using CNN-SVM with Data Augmentation. BIBM2022.
 - Zou, X., Zheng, X., **Ji, C.**, & Zhang, Y. . [An improved fast shapelet selection algorithm and its application to pervasive EEG](https://link.springer.com/article/10.1007/s00779-020-01501-4), Personal and Ubiquitous Computing
-- Xiao, X., Zheng, X., Bian, J., **Ji, C.**, & Cui, X.: [A dynamic and resource sharing virtual network mapping algorithm](https://www.sciencedirect.com/science/article/pii/S235286482200133X), Digital Communications and Networks.
+
 
 
 # 2021
