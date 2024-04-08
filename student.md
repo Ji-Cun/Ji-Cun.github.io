@@ -1,5 +1,8 @@
 [个人简介/Biography](./index.md)&nbsp; [项目/Project](./project.md)&nbsp; [论文/Publication](./publication.md)&nbsp;  [专利/Patent](./patent.md)&nbsp; [主要荣誉/Honor](./honor.md)&nbsp; [指导学生/My Students](./student.md)
 
+# 2024
+杜明森 山东师范大学第九届研究生“学术十杰”
+
 # 2023
 1. 杜明森 研究生国家奖学金
 2. 袁绍伟、张瑞 第十一届“大唐杯”全国新一代信息通信技术大赛  省三等奖
