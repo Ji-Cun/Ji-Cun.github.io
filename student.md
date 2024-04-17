@@ -1,8 +1,8 @@
 [个人简介/Biography](./index.md)&nbsp; [项目/Project](./project.md)&nbsp; [论文/Publication](./publication.md)&nbsp;  [专利/Patent](./patent.md)&nbsp; [主要荣誉/Honor](./honor.md)&nbsp; [指导学生/My Students](./student.md)
 
 # 2024
-杜明森 山东师范大学 [第九届研究生“学术十杰”](https://mp.weixin.qq.com/s/eIls2NioFKYN_kEaKeqsPw)
-杜明森 山东师范大学 优秀毕业研究生
+1. 杜明森 山东师范大学 [第九届研究生“学术十杰”](https://mp.weixin.qq.com/s/eIls2NioFKYN_kEaKeqsPw)
+2. 杜明森 山东师范大学 优秀毕业研究生
 
 # 2023
 1. 杜明森 研究生国家奖学金
