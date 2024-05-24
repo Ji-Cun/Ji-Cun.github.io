@@ -1,7 +1,12 @@
 [个人简介/Biography](./index.md)&nbsp; [项目/Project](./project.md)&nbsp; [论文/Publication](./publication.md)&nbsp;  [专利/Patent](./patent.md)&nbsp; [主要荣誉/Honor](./honor.md)&nbsp; [指导学生/My Students](./student.md)
+
+# 2024
+- Mingsen Du, Xiangwei Wei, Yupeng Hu, Yanxuan, Zheng, **Cun Ji#**: [Multivariate time series classification based on fusion features](https://www.sciencedirect.com/science/article/pii/S0957417424003178), Expert System With Applications.
+- Mingsen Du, Xiangwei Wei, Yupeng Hu, Yanxuan, Zheng, **Cun Ji#**: [Automatic Component Identification Based on Time Series Classification for Intelligent Devices](https://ieeexplore.ieee.org/abstract/document/10411694), 2023 IEEE International Conference on Data Mining Workshops
+
 # 2023
 - Mingsen Du, Xiangwei Wei, Yanxuan, Zheng, **Cun Ji#** : [Multi-feature based network for multivariate time series classification](https://www.sciencedirect.com/science/article/abs/pii/S0020025523005947), Information Sciences.
-- **C Ji**, M Du, Y Wei, Y Hu, S Liu, L Pan, X Zheng: Time series classification with random temporal features, Journal of King Saud University-Computer and Information Sciences
+- **C Ji**, M Du, Y Wei, Y Hu, S Liu, L Pan, X Zheng: [Time series classification with random temporal features](https://www.sciencedirect.com/science/article/pii/S1319157823003373), Journal of King Saud University-Computer and Information Sciences
 - Yanxuan Wei, Yunxiang Wang, Mingsen Du, Yupeng Hu, **Cun Ji#** : [Adaptive Shapelet Selection for Time Series Classification](https://ieeexplore.ieee.org/abstract/document/10152664/), CSCWD2023.
 - Xiao, X., Zheng, X., Bian, J., **Ji, C.**, & Cui, X.: [A dynamic and resource sharing virtual network mapping algorithm](https://www.sciencedirect.com/science/article/pii/S235286482200133X), Digital Communications and Networks.
 
