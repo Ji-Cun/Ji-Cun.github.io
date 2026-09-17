@@ -25,7 +25,7 @@
 
         .stu-table {
             width: 100%;
-            min-width: 600px;
+            min-width: 820px;
             border-collapse: collapse;
             font-size: 15px;
             border: 1px solid #d9e2ec;
@@ -45,7 +45,9 @@
             text-align: center;
         }
 
-        .stu-table thead th.col-content {
+        .stu-table thead th.col-author,
+        .stu-table thead th.col-title,
+        .stu-table thead th.col-journal {
             text-align: left;
         }
 
@@ -68,10 +70,24 @@
             letter-spacing: 1px;
         }
 
-        /* 内容列左对齐 */
-        .stu-table td.col-content {
+        /* 作者列 */
+        .stu-table td.col-author {
+            text-align: left;
+            color: #1f4e79;
+            font-weight: 500;
+        }
+
+        /* 标题列 */
+        .stu-table td.col-title {
             text-align: left;
             color: #22303f;
+        }
+
+        /* 期刊/会议列 */
+        .stu-table td.col-journal {
+            text-align: left;
+            color: #35617f;
+            font-style: italic;
         }
 
         /* ===== 年份列两种颜色交替 ===== */
@@ -101,7 +117,7 @@
         @media (max-width: 640px) {
             .stu-table {
                 font-size: 13px;
-                min-width: 480px;
+                min-width: 620px;
             }
 
             .stu-table thead th,
@@ -187,199 +203,303 @@
                         <table class="stu-table">
                             <thead>
                                 <tr>
-                                    <th class="col-year" style="width:12%">年份</th>
-                                    <th class="col-content" style="width:88%">论文</th>
+                                    <th class="col-year" style="width:8%">年份</th>
+                                    <th class="col-author" style="width:26%">作者</th>
+                                    <th class="col-title" style="width:42%">标题</th>
+                                    <th class="col-journal" style="width:24%">期刊/会议</th>
                                 </tr>
                             </thead>
 
                             <tbody>
-                                <!-- ===== 2026（颜色A） ===== -->
+                                <!-- ===== 2026 ===== -->
                                 <tr class="data-row">
                                     <td class="col-year color-a" rowspan="3">2026</td>
-                                    <td class="col-content">Yanxuan Wei, Yiangxia Tang, Xiangwei Zheng, <u>Cun Ji*</u>: Patch is Effective for Multivariate Time Series Classification, Knowledge-Based Systems.</td>
+                                    <td class="col-author">Yanxuan Wei, Yiangxia Tang, Xiangwei Zheng, <u>Cun Ji*</u></td>
+                                    <td class="col-title">Patch is Effective for Multivariate Time Series Classification</td>
+                                    <td class="col-journal">Knowledge-Based Systems</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Sinan Jia, Xiaoming Wu, Lifeng Zhang, <u>Cun Ji</u>, Xiangwei Zheng: Temporal Context Prediction and Prototype Memory Retrieval for Video Anomaly Detection, Digital Signal Processing.</td>
+                                    <td class="col-author">Sinan Jia, Xiaoming Wu, Lifeng Zhang, <u>Cun Ji</u>, Xiangwei Zheng</td>
+                                    <td class="col-title">Temporal Context Prediction and Prototype Memory Retrieval for Video Anomaly Detection</td>
+                                    <td class="col-journal">Digital Signal Processing</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Wenqi Niu, <u>Cun Ji</u>, Tingting Li, Bo Li: An Optimal Edge Data Caching Scheme Based on Improved Particle Swarm Optimization, Concurrency and Computation: Practice and Experience.</td>
+                                    <td class="col-author">Wenqi Niu, <u>Cun Ji</u>, Tingting Li, Bo Li</td>
+                                    <td class="col-title">An Optimal Edge Data Caching Scheme Based on Improved Particle Swarm Optimization</td>
+                                    <td class="col-journal">Concurrency and Computation: Practice and Experience</td>
                                 </tr>
 
-                                <!-- ===== 2025（颜色B） ===== -->
+                                <!-- ===== 2025 ===== -->
                                 <tr class="data-row">
                                     <td class="col-year color-b" rowspan="9">2025</td>
-                                    <td class="col-content">Yiangxia Tang, Yanxuan Wei, Yupeng Hu*, Xiangwei Zheng, <u>Cun Ji*</u>: Convolutional Network Integrated with Frequency Adaptive Learning for Multivariate Time Series Classification, ACM Transactions on Knowledge Discovery from Data.</td>
+                                    <td class="col-author">Yiangxia Tang, Yanxuan Wei, Yupeng Hu*, Xiangwei Zheng, <u>Cun Ji*</u></td>
+                                    <td class="col-title">Convolutional Network Integrated with Frequency Adaptive Learning for Multivariate Time Series Classification</td>
+                                    <td class="col-journal">ACM Transactions on Knowledge Discovery from Data</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Mingsen Du, Meng Chen, Zheng Liu, Yongjian Li, <u>Cun Ji*</u> Shoushui Wei*: Multivariate Time Series Classification via Heterogeneous Graph Representation, IEEE Transactions on Industrial Informatics.</td>
+                                    <td class="col-author">Mingsen Du, Meng Chen, Zheng Liu, Yongjian Li, <u>Cun Ji*</u> Shoushui Wei*</td>
+                                    <td class="col-title">Multivariate Time Series Classification via Heterogeneous Graph Representation</td>
+                                    <td class="col-journal">IEEE Transactions on Industrial Informatics</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Mingsen Du, Yanxuan Wei, Xiangwei Zheng, <u>Cun Ji*</u>: Causal and Local Correlations Based Network for Multivariate Time Series Classification, Neurocomputing.</td>
+                                    <td class="col-author">Mingsen Du, Yanxuan Wei, Xiangwei Zheng, <u>Cun Ji*</u></td>
+                                    <td class="col-title">Causal and Local Correlations Based Network for Multivariate Time Series Classification</td>
+                                    <td class="col-journal">Neurocomputing</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Yiangxia Tang, Yanxuan Wei, Teng Li*, Xiangwei Zheng, <u>Cun Ji*</u>: A hierarchical transformer-based network for multivariate time series classification, Information Systems.</td>
+                                    <td class="col-author">Yiangxia Tang, Yanxuan Wei, Teng Li*, Xiangwei Zheng, <u>Cun Ji*</u></td>
+                                    <td class="col-title">A hierarchical transformer-based network for multivariate time series classification</td>
+                                    <td class="col-journal">Information Systems</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Mingsen Du, Yanxuan Wei, Yiangxia Tang, Xiangwei Zheng, Shoushui Wei*, <u>Cun Ji*</u>: ST-Tree with interpretability for multivariate time series classification, Neural Networks.</td>
+                                    <td class="col-author">Mingsen Du, Yanxuan Wei, Yiangxia Tang, Xiangwei Zheng, Shoushui Wei*, <u>Cun Ji*</u></td>
+                                    <td class="col-title">ST-Tree with interpretability for multivariate time series classification</td>
+                                    <td class="col-journal">Neural Networks</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Wenjuan Shi, Xiangwei Zheng, Lifeng Zhang, <u>Cun Ji</u>, Yuang Zhang, Ji Bian: Multi-Object Tracking based on Optimal Transport and Coordinate Attention Mechanism, Signal Processing.</td>
+                                    <td class="col-author">Wenjuan Shi, Xiangwei Zheng, Lifeng Zhang, <u>Cun Ji</u>, Yuang Zhang, Ji Bian</td>
+                                    <td class="col-title">Multi-Object Tracking based on Optimal Transport and Coordinate Attention Mechanism</td>
+                                    <td class="col-journal">Signal Processing</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Yanxuan Wei, Yiangxia Tang, Yupeng Hu*, Xiangwei Zheng, <u>Cun Ji*</u>: Large Receptive Field Network for Time Series Image Classification, ICPADS2025.</td>
+                                    <td class="col-author">Yanxuan Wei, Yiangxia Tang, Yupeng Hu*, Xiangwei Zheng, <u>Cun Ji*</u></td>
+                                    <td class="col-title">Large Receptive Field Network for Time Series Image Classification</td>
+                                    <td class="col-journal">ICPADS2025</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Teng Li, Xiaodong Guo*, <u>Cun Ji*</u>: A literature survey of shapelet quality measures for time series classification, PeerJ Computer Science.</td>
+                                    <td class="col-author">Teng Li, Xiaodong Guo*, <u>Cun Ji*</u></td>
+                                    <td class="col-title">A literature survey of shapelet quality measures for time series classification</td>
+                                    <td class="col-journal">PeerJ Computer Science</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Teng Li, Jiajia Nie, Guozhi Qiu, Zhen Li, <u>Cun Ji</u>, Xueqing Li: Time Series Forecasting via an Elastic Optimal Adaptive GM (1, 1) Model, Electronics.</td>
+                                    <td class="col-author">Teng Li, Jiajia Nie, Guozhi Qiu, Zhen Li, <u>Cun Ji</u>, Xueqing Li</td>
+                                    <td class="col-title">Time Series Forecasting via an Elastic Optimal Adaptive GM (1, 1) Model</td>
+                                    <td class="col-journal">Electronics</td>
                                 </tr>
 
-                                <!-- ===== 2024（颜色A） ===== -->
+                                <!-- ===== 2024 ===== -->
                                 <tr class="data-row">
                                     <td class="col-year color-a" rowspan="3">2024</td>
-                                    <td class="col-content"><u>Cun Ji*</u>, Yanxuan Wei, Xiangwei Zheng: Shapelet selection for time series classification, Applied Soft Computing.</td>
+                                    <td class="col-author"><u>Cun Ji*</u>, Yanxuan Wei, Xiangwei Zheng</td>
+                                    <td class="col-title">Shapelet selection for time series classification</td>
+                                    <td class="col-journal">Applied Soft Computing</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Yanxuan Wei, Mingsen Du, Teng Li*, Xiangwei Zheng, <u>Cun Ji*</u>: Feature-fused residual network for time series classification, Journal of King Saud University-Computer and Information Sciences.</td>
+                                    <td class="col-author">Yanxuan Wei, Mingsen Du, Teng Li*, Xiangwei Zheng, <u>Cun Ji*</u></td>
+                                    <td class="col-title">Feature-fused residual network for time series classification</td>
+                                    <td class="col-journal">Journal of King Saud University-Computer and Information Sciences</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Mingsen Du, Yanxuan Wei, Yupeng Hu, Xiangwei Zheng, <u>Cun Ji*</u>: Multivariate time series classification based on fusion features, Expert System With Applications.</td>
+                                    <td class="col-author">Mingsen Du, Yanxuan Wei, Yupeng Hu, Xiangwei Zheng, <u>Cun Ji*</u></td>
+                                    <td class="col-title">Multivariate time series classification based on fusion features</td>
+                                    <td class="col-journal">Expert System With Applications</td>
                                 </tr>
 
-                                <!-- ===== 2023（颜色B） ===== -->
+                                <!-- ===== 2023 ===== -->
                                 <tr class="data-row">
                                     <td class="col-year color-b" rowspan="5">2023</td>
-                                    <td class="col-content">Mingsen Du, Yanxuan Wei, Yanxuan, Xiangwei Zheng, <u>Cun Ji*</u>: Multi-feature based network for multivariate time series classification, Information Sciences.</td>
+                                    <td class="col-author">Mingsen Du, Yanxuan Wei, Yanxuan, Xiangwei Zheng, <u>Cun Ji*</u></td>
+                                    <td class="col-title">Multi-feature based network for multivariate time series classification</td>
+                                    <td class="col-journal">Information Sciences</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content"><u>C Ji*</u>, M Du, Y Wei, Y Hu, S Liu, L Pan, X Zheng: Time series classification with random temporal features, Journal of King Saud University-Computer and Information Sciences.</td>
+                                    <td class="col-author"><u>C Ji*</u>, M Du, Y Wei, Y Hu, S Liu, L Pan, X Zheng</td>
+                                    <td class="col-title">Time series classification with random temporal features</td>
+                                    <td class="col-journal">Journal of King Saud University-Computer and Information Sciences</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Yanxuan Wei, Yunxiang Wang, Mingsen Du, Yupeng Hu*, <u>Cun Ji*</u>: Adaptive Shapelet Selection for Time Series Classification, CSCWD2023.</td>
+                                    <td class="col-author">Yanxuan Wei, Yunxiang Wang, Mingsen Du, Yupeng Hu*, <u>Cun Ji*</u></td>
+                                    <td class="col-title">Adaptive Shapelet Selection for Time Series Classification</td>
+                                    <td class="col-journal">CSCWD2023</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">X Xiao, X Zheng, J Bian, <u>C Ji</u>, X Cui: A dynamic and resource sharing virtual network mapping algorithm, Digital Communications and Networks.</td>
+                                    <td class="col-author">X Xiao, X Zheng, J Bian, <u>C Ji</u>, X Cui</td>
+                                    <td class="col-title">A dynamic and resource sharing virtual network mapping algorithm</td>
+                                    <td class="col-journal">Digital Communications and Networks</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Mingsen Du, Yanxuan Wei, Yupeng Hu*, Xiangwei Zheng, <u>Cun Ji*</u>: Automatic Component Identification Based on Time Series Classification for Intelligent Devices, 2023 IEEE International Conference on Data Mining Workshops.</td>
+                                    <td class="col-author">Mingsen Du, Yanxuan Wei, Yupeng Hu*, Xiangwei Zheng, <u>Cun Ji*</u></td>
+                                    <td class="col-title">Automatic Component Identification Based on Time Series Classification for Intelligent Devices</td>
+                                    <td class="col-journal">2023 IEEE International Conference on Data Mining Workshops</td>
                                 </tr>
 
-                                <!-- ===== 2022（颜色A） ===== -->
+                                <!-- ===== 2022 ===== -->
                                 <tr class="data-row">
                                     <td class="col-year color-a" rowspan="4">2022</td>
-                                    <td class="col-content"><u>Ji, C.</u>, Hu, Y., Liu, S., Pan, L., Li, B., & Zheng, X.: Fully Convolutional Networks with Shapelet Features for Time Series Classification, Information Sciences.</td>
+                                    <td class="col-author"><u>Ji, C.</u>, Hu, Y., Liu, S., Pan, L., Li, B., &amp; Zheng, X.</td>
+                                    <td class="col-title">Fully Convolutional Networks with Shapelet Features for Time Series Classification</td>
+                                    <td class="col-journal">Information Sciences</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content"><u>Ji, C.</u>, Du, M., Hu, Y., Liu, S., Pan, L., & Zheng, X.: Time series classification based on temporal features, Applied Soft Computing.</td>
+                                    <td class="col-author"><u>Ji, C.</u>, Du, M., Hu, Y., Liu, S., Pan, L., &amp; Zheng, X.</td>
+                                    <td class="col-title">Time series classification based on temporal features</td>
+                                    <td class="col-journal">Applied Soft Computing</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Guo, G., Gao, P., Zheng, X., & <u>Ji, C.</u>: Multimodal Emotion Recognition Using CNN-SVM with Data Augmentation, BIBM2022.</td>
+                                    <td class="col-author">Guo, G., Gao, P., Zheng, X., &amp; <u>Ji, C.</u></td>
+                                    <td class="col-title">Multimodal Emotion Recognition Using CNN-SVM with Data Augmentation</td>
+                                    <td class="col-journal">BIBM2022</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Zou, X., Zheng, X., <u>Ji, C.</u>, & Zhang, Y.: An improved fast shapelet selection algorithm and its application to pervasive EEG, Personal and Ubiquitous Computing.</td>
+                                    <td class="col-author">Zou, X., Zheng, X., <u>Ji, C.</u>, &amp; Zhang, Y.</td>
+                                    <td class="col-title">An improved fast shapelet selection algorithm and its application to pervasive EEG</td>
+                                    <td class="col-journal">Personal and Ubiquitous Computing</td>
                                 </tr>
 
-                                <!-- ===== 2021（颜色B） ===== -->
+                                <!-- ===== 2021 ===== -->
                                 <tr class="data-row">
                                     <td class="col-year color-b" rowspan="5">2021</td>
-                                    <td class="col-content"><u>Ji Cun</u>, Hu Yupeng, Wang Kun, Zhan Peng, Li Xueqing, Zheng Xiangwei: Identifiable Temporal Feature Selection via Horizontal Visibility Graph Towards Smart Medical Applications, Interdisciplinary Sciences: Computational Life Sciences.</td>
+                                    <td class="col-author"><u>Ji Cun</u>, Hu Yupeng, Wang Kun, Zhan Peng, Li Xueqing, Zheng Xiangwei</td>
+                                    <td class="col-title">Identifiable Temporal Feature Selection via Horizontal Visibility Graph Towards Smart Medical Applications</td>
+                                    <td class="col-journal">Interdisciplinary Sciences: Computational Life Sciences</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Zheng Xiangwei, Zhang Min, Li Tiantian, <u>Ji Cun</u>, Hu Bin: A novel consciousness emotion recognition method using ERP components and MMSE, Journal of Neural Engineering.</td>
+                                    <td class="col-author">Zheng Xiangwei, Zhang Min, Li Tiantian, <u>Ji Cun</u>, Hu Bin</td>
+                                    <td class="col-title">A novel consciousness emotion recognition method using ERP components and MMSE</td>
+                                    <td class="col-journal">Journal of Neural Engineering</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Yang Shan, Zheng Xiangwei, <u>Ji Cun</u>, Chen Xuanchi: Multi-layer Representation Learning and Its Application to Electronic Health Records, Neural Processing Letters.</td>
+                                    <td class="col-author">Yang Shan, Zheng Xiangwei, <u>Ji Cun</u>, Chen Xuanchi</td>
+                                    <td class="col-title">Multi-layer Representation Learning and Its Application to Electronic Health Records</td>
+                                    <td class="col-journal">Neural Processing Letters</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Li Tingting, Niu Wenqi, <u>Ji Cun</u>: Edge user allocation by FOA in edge computing environment, Journal of Computational Science.</td>
+                                    <td class="col-author">Li Tingting, Niu Wenqi, <u>Ji Cun</u></td>
+                                    <td class="col-title">Edge user allocation by FOA in edge computing environment</td>
+                                    <td class="col-journal">Journal of Computational Science</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Zhang Shichao, Zheng Xiangwei, Zhang Mingzhe, Guo Gengyuan, <u>Ji Cun</u>: A Pervasive Multi-physiological Signal-Based Emotion Classification with Shapelet Transformation and Decision Fusion, COLLABORATECOM 2021.</td>
+                                    <td class="col-author">Zhang Shichao, Zheng Xiangwei, Zhang Mingzhe, Guo Gengyuan, <u>Ji Cun</u></td>
+                                    <td class="col-title">A Pervasive Multi-physiological Signal-Based Emotion Classification with Shapelet Transformation and Decision Fusion</td>
+                                    <td class="col-journal">COLLABORATECOM 2021</td>
                                 </tr>
 
-                                <!-- ===== 2020（颜色A） ===== -->
+                                <!-- ===== 2020 ===== -->
                                 <tr class="data-row">
                                     <td class="col-year color-a" rowspan="4">2020</td>
-                                    <td class="col-content"><u>Cun Ji</u>, Xiunan Zou, Shijun Liu, Li Pan: ADARC: An anomaly detection algorithm based on relative outlier distance and biseries correlation, Software: Practice and Experience.</td>
+                                    <td class="col-author"><u>Cun Ji</u>, Xiunan Zou, Shijun Liu, Li Pan</td>
+                                    <td class="col-title">ADARC: An anomaly detection algorithm based on relative outlier distance and biseries correlation</td>
+                                    <td class="col-journal">Software: Practice and Experience</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Hu Yupeng, <u>Ji Cun</u>, Zhang Qingke, Chen Lin, Zhan Peng, Li Xueqing: A novel multi-resolution representation for time series sensor data analysis, Soft Computing.</td>
+                                    <td class="col-author">Hu Yupeng, <u>Ji Cun</u>, Zhang Qingke, Chen Lin, Zhan Peng, Li Xueqing</td>
+                                    <td class="col-title">A novel multi-resolution representation for time series sensor data analysis</td>
+                                    <td class="col-journal">Soft Computing</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">赵超, 王腾江, 刘士军, 潘丽, <u>嵇存</u>: 融合选择提取与子类聚类的快速Shapelet发现算法, 软件学报.</td>
+                                    <td class="col-author">赵超, 王腾江, 刘士军, 潘丽, <u>嵇存</u></td>
+                                    <td class="col-title">融合选择提取与子类聚类的快速Shapelet发现算法</td>
+                                    <td class="col-journal">软件学报</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Sun Xiaofang, Hu Bin, Zheng Xiangwei, Yin Yongqiang, <u>Ji Cun</u>: Emotion Classification Based on Brain Functional Connectivity Network, BIBM2020.</td>
+                                    <td class="col-author">Sun Xiaofang, Hu Bin, Zheng Xiangwei, Yin Yongqiang, <u>Ji Cun</u></td>
+                                    <td class="col-title">Emotion Classification Based on Brain Functional Connectivity Network</td>
+                                    <td class="col-journal">BIBM2020</td>
                                 </tr>
 
-                                <!-- ===== 2019（颜色B） ===== -->
+                                <!-- ===== 2019 ===== -->
                                 <tr class="data-row">
                                     <td class="col-year color-b" rowspan="5">2019</td>
-                                    <td class="col-content"><u>Ji Cun</u>, Zhao Chao, Pan Li, Liu Shijun, Yang Chenglei, Meng Xiangxu: A Just-in-time Shapelet Selection Service for Online Time Series Classification, Computer Networks.</td>
+                                    <td class="col-author"><u>Ji Cun</u>, Zhao Chao, Pan Li, Liu Shijun, Yang Chenglei, Meng Xiangxu</td>
+                                    <td class="col-title">A Just-in-time Shapelet Selection Service for Online Time Series Classification</td>
+                                    <td class="col-journal">Computer Networks</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content"><u>Ji Cun</u>, Zhao Chao, Liu Shijun, Yang Chenglei, Pan Li, Wu Lei, Meng Xiangxu: A Fast Shapelet Selection Algorithm for Time Series Classification, Computer Networks.</td>
+                                    <td class="col-author"><u>Ji Cun</u>, Zhao Chao, Liu Shijun, Yang Chenglei, Pan Li, Wu Lei, Meng Xiangxu</td>
+                                    <td class="col-title">A Fast Shapelet Selection Algorithm for Time Series Classification</td>
+                                    <td class="col-journal">Computer Networks</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Yang Yang, Zheng Xiangwei, <u>Ji Cun</u>: Disease Prediction Model Based on BiLSTM and Attention Mechanism, BIBM2019.</td>
+                                    <td class="col-author">Yang Yang, Zheng Xiangwei, <u>Ji Cun</u></td>
+                                    <td class="col-title">Disease Prediction Model Based on BiLSTM and Attention Mechanism</td>
+                                    <td class="col-journal">BIBM2019</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Zhao Chao, Liu Shijun, Pan Li, <u>Ji Cun</u>, Yang Chenglei: Selecting Superior Candidates from a Suitable Set: A Selective Extraction Algorithm for Accelerating Shapelet Discovery in Time Series Data, CSCWD2019.</td>
+                                    <td class="col-author">Zhao Chao, Liu Shijun, Pan Li, <u>Ji Cun</u>, Yang Chenglei</td>
+                                    <td class="col-title">Selecting Superior Candidates from a Suitable Set: A Selective Extraction Algorithm for Accelerating Shapelet Discovery in Time Series Data</td>
+                                    <td class="col-journal">CSCWD2019</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Tianlun Dai, Wenchao Zheng, Jiayue Sun, <u>Cun Ji</u>, Tao Zhou, Mingtong Li, Wei Hu, Ziqiang Yu: Continuous Route Planning over a Dynamic Graph in Real-Time, Procedia Computer Science (IIKI2019).</td>
+                                    <td class="col-author">Tianlun Dai, Wenchao Zheng, Jiayue Sun, <u>Cun Ji</u>, Tao Zhou, Mingtong Li, Wei Hu, Ziqiang Yu</td>
+                                    <td class="col-title">Continuous Route Planning over a Dynamic Graph in Real-Time</td>
+                                    <td class="col-journal">Procedia Computer Science (IIKI2019)</td>
                                 </tr>
 
-                                <!-- ===== 2018（颜色A） ===== -->
+                                <!-- ===== 2018 ===== -->
                                 <tr class="data-row">
                                     <td class="col-year color-a" rowspan="4">2018</td>
-                                    <td class="col-content">张琪, 胡宇鹏, <u>嵇存</u>, 展鹏, 李学庆: 边缘计算应用:传感数据异常实时检测算法, 计算机研究与发展.</td>
+                                    <td class="col-author">张琪, 胡宇鹏, <u>嵇存</u>, 展鹏, 李学庆</td>
+                                    <td class="col-title">边缘计算应用:传感数据异常实时检测算法</td>
+                                    <td class="col-journal">计算机研究与发展</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content"><u>Ji Cun</u>, Zou Xiunan, Hu Yupeng, Liu Shijun: A 2D Transform Based Distance Function for Time Series Classification, CollaborateCom2018.</td>
+                                    <td class="col-author"><u>Ji Cun</u>, Zou Xiunan, Hu Yupeng, Liu Shijun</td>
+                                    <td class="col-title">A 2D Transform Based Distance Function for Time Series Classification</td>
+                                    <td class="col-journal">CollaborateCom2018</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content"><u>Cun Ji</u>, Xiunan Zou, Yupeng Hu, Shijun Liu, Lei Lyu, Xiangwei Zheng: XG-SF: An XGBoost Classifier Based on Shapelet Features for Time Series Classification, Procedia Computer Science (IIKI2018).</td>
+                                    <td class="col-author"><u>Cun Ji</u>, Xiunan Zou, Yupeng Hu, Shijun Liu, Lei Lyu, Xiangwei Zheng</td>
+                                    <td class="col-title">XG-SF: An XGBoost Classifier Based on Shapelet Features for Time Series Classification</td>
+                                    <td class="col-journal">Procedia Computer Science (IIKI2018)</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Xiukai Zhao, Lei Lyu, Chen Lyu, <u>Cun Ji</u>: A new parallel simulation method for massive crowd, Procedia Computer Science (IIKI2018).</td>
+                                    <td class="col-author">Xiukai Zhao, Lei Lyu, Chen Lyu, <u>Cun Ji</u></td>
+                                    <td class="col-title">A new parallel simulation method for massive crowd</td>
+                                    <td class="col-journal">Procedia Computer Science (IIKI2018)</td>
                                 </tr>
 
-                                <!-- ===== 2017（颜色B） ===== -->
+                                <!-- ===== 2017 ===== -->
                                 <tr class="data-row">
                                     <td class="col-year color-b" rowspan="2">2017</td>
-                                    <td class="col-content"><u>Ji Cun</u>, Zhao Chao, Pan Li, Liu Shijun, Yang Chenglei, Wu Lei: A Fast Shapelet Discovery Algorithm Based on Important Data Points, International Journal of Web Services Research.</td>
+                                    <td class="col-author"><u>Ji Cun</u>, Zhao Chao, Pan Li, Liu Shijun, Yang Chenglei, Wu Lei</td>
+                                    <td class="col-title">A Fast Shapelet Discovery Algorithm Based on Important Data Points</td>
+                                    <td class="col-journal">International Journal of Web Services Research</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content"><u>Ji Cun</u>, Liu Shijun, Yang Chenglei, Pan Li, Wu Lei, Meng Xiangxu: A Shapelet Selection Algorithm for Time Series Classification: New Directions, Procedia Computer Science (IIKI2017).</td>
+                                    <td class="col-author"><u>Ji Cun</u>, Liu Shijun, Yang Chenglei, Pan Li, Wu Lei, Meng Xiangxu</td>
+                                    <td class="col-title">A Shapelet Selection Algorithm for Time Series Classification: New Directions</td>
+                                    <td class="col-journal">Procedia Computer Science (IIKI2017)</td>
                                 </tr>
 
-                                <!-- ===== 2016（颜色A） ===== -->
+                                <!-- ===== 2016 ===== -->
                                 <tr class="data-row">
                                     <td class="col-year color-a" rowspan="6">2016</td>
-                                    <td class="col-content"><u>Ji Cun</u>, Shao Qingshi, Jiao Sun, Liu Shijun, Li Pan, Lei Wu, Yang Chenglei: Device Data Ingestion for Industrial Big Data Platforms with a Case Study, Sensors.</td>
+                                    <td class="col-author"><u>Ji Cun</u>, Shao Qingshi, Jiao Sun, Liu Shijun, Li Pan, Lei Wu, Yang Chenglei</td>
+                                    <td class="col-title">Device Data Ingestion for Industrial Big Data Platforms with a Case Study</td>
+                                    <td class="col-journal">Sensors</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content"><u>Ji Cun</u>, Liu Shijun, Yang Chenglei, Cui Lizhen, Pan Li, Wu Lei, Liu Yingbo: A Self-Evolving Method of Data Model for Cloud-Based Machine Data Ingestion, Cloud2016.</td>
+                                    <td class="col-author"><u>Ji Cun</u>, Liu Shijun, Yang Chenglei, Cui Lizhen, Pan Li, Wu Lei, Liu Yingbo</td>
+                                    <td class="col-title">A Self-Evolving Method of Data Model for Cloud-Based Machine Data Ingestion</td>
+                                    <td class="col-journal">Cloud2016</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content"><u>Ji Cun</u>, Liu Shijun, Yang Chenglei, Wu Lei, Pan Li, Meng Xiangxu: A piecewise linear representation method based on importance data points for time series data, CSCWD2016.</td>
+                                    <td class="col-author"><u>Ji Cun</u>, Liu Shijun, Yang Chenglei, Wu Lei, Pan Li, Meng Xiangxu</td>
+                                    <td class="col-title">A piecewise linear representation method based on importance data points for time series data</td>
+                                    <td class="col-journal">CSCWD2016</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Hu Yupeng, Yang Chong, <u>Ji Cun</u>, Xu Yang, Li Xueqing: Efficient Snapshot KNN Join Processing for Large Data Using MapReduce, ICPADS2016.</td>
+                                    <td class="col-author">Hu Yupeng, Yang Chong, <u>Ji Cun</u>, Xu Yang, Li Xueqing</td>
+                                    <td class="col-title">Efficient Snapshot KNN Join Processing for Large Data Using MapReduce</td>
+                                    <td class="col-journal">ICPADS2016</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Hu Yupeng, <u>Ji Cun</u>, Jing Ming, Ding Yiming, Kuai Shuo, Li Xueqing: A Continuous Segmentation Algorithm for Streaming Time Series, CollaborateCom2016.</td>
+                                    <td class="col-author">Hu Yupeng, <u>Ji Cun</u>, Jing Ming, Ding Yiming, Kuai Shuo, Li Xueqing</td>
+                                    <td class="col-title">A Continuous Segmentation Algorithm for Streaming Time Series</td>
+                                    <td class="col-journal">CollaborateCom2016</td>
                                 </tr>
                                 <tr class="data-row">
-                                    <td class="col-content">Hu Yupeng, <u>Ji Cun</u>, Jing Ming, Li Xueqing: A K-Motifs Discovery Approach for Large Time-Series Data Analysis, APWeb2016.</td>
+                                    <td class="col-author">Hu Yupeng, <u>Ji Cun</u>, Jing Ming, Li Xueqing</td>
+                                    <td class="col-title">A K-Motifs Discovery Approach for Large Time-Series Data Analysis</td>
+                                    <td class="col-journal">APWeb2016</td>
                                 </tr>
 
-                                <!-- ===== 2015（颜色B） ===== -->
+                                <!-- ===== 2015 ===== -->
                                 <tr class="data-row">
                                     <td class="col-year color-b" rowspan="1">2015</td>
-                                    <td class="col-content"><u>Ji Cun</u>, Liu Shijun, Yang Chenglei, Wu Lei, Pan Li: IBDP: An Industrial Big Data Ingestion and Analysis Platform and Case Studies, IIKI2015.</td>
+                                    <td class="col-author"><u>Ji Cun</u>, Liu Shijun, Yang Chenglei, Wu Lei, Pan Li</td>
+                                    <td class="col-title">IBDP: An Industrial Big Data Ingestion and Analysis Platform and Case Studies</td>
+                                    <td class="col-journal">IIKI2015</td>
                                 </tr>
                             </tbody>
                         </table>
