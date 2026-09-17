@@ -25,7 +25,7 @@
 
         .stu-table {
             width: 100%;
-            min-width: 500px;
+            min-width: 520px;
             border-collapse: collapse;
             font-size: 15px;
             border: 1px solid #d9e2ec;
@@ -37,17 +37,16 @@
         .stu-table thead th {
             background: #34495e;
             color: #ffffff;
-            text-align: left;
             padding: 12px 16px;
             font-weight: 600;
             font-size: 15px;
             white-space: nowrap;
             border-bottom: 2px solid #22303f;
+            text-align: center;
         }
 
-        .stu-table thead th.col-year,
-        .stu-table thead th.col-extra {
-            text-align: center;
+        .stu-table thead th.col-name {
+            text-align: left;
         }
 
         /* 数据单元格 */
@@ -58,36 +57,40 @@
             line-height: 1.6;
         }
 
+        /* 姓名列左对齐加粗 */
         .stu-table td.col-name {
             font-weight: 600;
             color: #22303f;
+            text-align: left;
         }
 
-        .stu-table td.col-year,
-        .stu-table td.col-extra {
+        /* 入学年份列 */
+        .stu-table td.col-year {
             text-align: center;
-        }
-
-        /* ===== 入学年份分隔行：醒目样式 ===== */
-        .stu-table tr.year-row td {
-            background: #1f4e79;            /* 深蓝背景 */
-            color: #ffffff;                 /* 白色文字 */
             font-weight: 700;
             font-size: 16px;
-            letter-spacing: 2px;
+            color: #1f4e79;
+            vertical-align: middle;
+            border-right: 2px solid #ffffff;
+            letter-spacing: 1px;
+        }
+
+        /* 毕业去向列居中 */
+        .stu-table td.col-extra {
             text-align: center;
-            padding: 10px 16px;
-            border-top: 3px solid #0d2b45;
-            border-bottom: 3px solid #0d2b45;
-            border-left: 6px solid #e67e22; /* 左侧橙色竖条 */
+            color: #35617f;
         }
 
-        /* 第一组分隔行去掉顶部粗边框，避免与表头重叠 */
-        .stu-table tbody:first-of-type tr.year-row td {
-            border-top: none;
+        /* ===== 年份列两种颜色交替 ===== */
+        .stu-table td.col-year.year-color-a {
+            background-color: #d6eaf8; /* 浅蓝色 */
         }
 
-        /* 相邻两行不同颜色（斑马纹） */
+        .stu-table td.col-year.year-color-b {
+            background-color: #fdebd0; /* 浅橙色 */
+        }
+
+        /* ===== 相邻学生行不同颜色（斑马纹） ===== */
         .stu-table tbody tr.data-row:nth-child(odd) {
             background-color: #ffffff;
         }
@@ -113,9 +116,8 @@
                 padding: 8px 10px;
             }
 
-            .stu-table tr.year-row td {
+            .stu-table td.col-year {
                 font-size: 14px;
-                padding: 8px 10px;
             }
         }
     </style>
@@ -189,110 +191,76 @@
                         <table class="stu-table">
                             <thead>
                                 <tr>
-                                    <th class="col-name" style="width:28%">姓名</th>
-                                    <th class="col-year" style="width:18%">入学年份</th>
-                                    <th class="col-extra" style="width:54%">毕业去向</th>
+                                    <th class="col-year" style="width:20%">入学年份</th>
+                                    <th class="col-name" style="width:30%">姓名</th>
+                                    <th class="col-extra" style="width:50%">毕业去向</th>
                                 </tr>
                             </thead>
 
-                            <!-- 2026 级 -->
                             <tbody>
-                                <tr class="year-row">
-                                    <td colspan="3">2026 级</td>
-                                </tr>
+                                <!-- ===== 2026 级（颜色A） ===== -->
                                 <tr class="data-row">
+                                    <td class="col-year year-color-a" rowspan="3">2026</td>
                                     <td class="col-name">南顺芳</td>
-                                    <td class="col-year">2026</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">梅万宇</td>
-                                    <td class="col-year">2026</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">付鑫晓</td>
-                                    <td class="col-year">2026</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
-                            </tbody>
 
-                            <!-- 2025 级 -->
-                            <tbody>
-                                <tr class="year-row">
-                                    <td colspan="3">2025 级</td>
-                                </tr>
+                                <!-- ===== 2025 级（颜色B） ===== -->
                                 <tr class="data-row">
+                                    <td class="col-year year-color-b" rowspan="2">2025</td>
                                     <td class="col-name">魏来</td>
-                                    <td class="col-year">2025</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">陈聪慧</td>
-                                    <td class="col-year">2025</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
-                            </tbody>
 
-                            <!-- 2024 级 -->
-                            <tbody>
-                                <tr class="year-row">
-                                    <td colspan="3">2024 级</td>
-                                </tr>
+                                <!-- ===== 2024 级（颜色A） ===== -->
                                 <tr class="data-row">
+                                    <td class="col-year year-color-a" rowspan="4">2024</td>
                                     <td class="col-name">王旭帅</td>
-                                    <td class="col-year">2024</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">彭钰</td>
-                                    <td class="col-year">2024</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">李昀昊</td>
-                                    <td class="col-year">2024</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">张朔</td>
-                                    <td class="col-year">2024</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
-                            </tbody>
 
-                            <!-- 2023 级 -->
-                            <tbody>
-                                <tr class="year-row">
-                                    <td colspan="3">2023 级</td>
-                                </tr>
+                                <!-- ===== 2023 级（颜色B） ===== -->
                                 <tr class="data-row">
+                                    <td class="col-year year-color-b" rowspan="1">2023</td>
                                     <td class="col-name">唐应霞</td>
-                                    <td class="col-year">2023</td>
                                     <td class="col-extra">山推建友</td>
                                 </tr>
-                            </tbody>
 
-                            <!-- 2022 级 -->
-                            <tbody>
-                                <tr class="year-row">
-                                    <td colspan="3">2022 级</td>
-                                </tr>
+                                <!-- ===== 2022 级（颜色A） ===== -->
                                 <tr class="data-row">
+                                    <td class="col-year year-color-a" rowspan="1">2022</td>
                                     <td class="col-name">魏衍宣</td>
-                                    <td class="col-year">2022</td>
                                     <td class="col-extra">山东大学</td>
                                 </tr>
-                            </tbody>
 
-                            <!-- 2021 级 -->
-                            <tbody>
-                                <tr class="year-row">
-                                    <td colspan="3">2021 级</td>
-                                </tr>
+                                <!-- ===== 2021 级（颜色B） ===== -->
                                 <tr class="data-row">
+                                    <td class="col-year year-color-b" rowspan="1">2021</td>
                                     <td class="col-name">杜明森</td>
-                                    <td class="col-year">2021</td>
                                     <td class="col-extra">山东大学</td>
                                 </tr>
                             </tbody>
