@@ -14,6 +14,109 @@
     <script src="js/jquery.min.js"></script>
     <script src="css/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        /* ===== 学生列表表格样式 ===== */
+        .stu-table-wrap {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 2.5em;
+        }
+
+        .stu-table {
+            width: 100%;
+            min-width: 560px;
+            border-collapse: collapse;
+            font-size: 15px;
+            border: 1px solid #d9e2ec;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        /* 表头 */
+        .stu-table thead th {
+            background: #34495e;
+            color: #ffffff;
+            text-align: left;
+            padding: 11px 14px;
+            font-weight: 600;
+            font-size: 15px;
+            white-space: nowrap;
+            border-bottom: 2px solid #22303f;
+        }
+
+        .stu-table thead th.col-year,
+        .stu-table thead th.col-extra {
+            text-align: center;
+        }
+
+        /* 单元格 */
+        .stu-table td {
+            padding: 9px 14px;
+            border-bottom: 1px solid #e6ecf2;
+            vertical-align: middle;
+            line-height: 1.6;
+        }
+
+        .stu-table td.col-name {
+            font-weight: 600;
+            color: #22303f;
+        }
+
+        .stu-table td.col-year,
+        .stu-table td.col-extra {
+            text-align: center;
+        }
+
+        /* 入学年份分隔行 */
+        .stu-table tr.year-row td {
+            background: #eaf3fb;
+            color: #1f4e79;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 8px 14px;
+            border-top: 3px solid #b8d4ea;
+            border-bottom: 1px solid #b8d4ea;
+        }
+
+        .stu-table tbody tr.year-row:first-child td {
+            border-top: none;
+        }
+
+        /* 相邻两行不同颜色（斑马纹） */
+        .stu-table tbody tr.data-row:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        .stu-table tbody tr.data-row:nth-child(even) {
+            background-color: #f4f9fd;
+        }
+
+        /* 鼠标悬停高亮 */
+        .stu-table tbody tr.data-row:hover {
+            background-color: #e3f1ff;
+        }
+
+        /* 联系方式列使用等宽一点的字体，便于阅读邮箱 */
+        .stu-table td.col-contact {
+            color: #35617f;
+            font-size: 14px;
+            word-break: break-all;
+        }
+
+        /* 小屏幕适配 */
+        @media (max-width: 640px) {
+            .stu-table {
+                font-size: 13px;
+                min-width: 480px;
+            }
+
+            .stu-table thead th,
+            .stu-table td {
+                padding: 7px 8px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -54,84 +157,134 @@
                                     aria-hidden="true"></i>Email</a></li>
                     </ul>
                 </div>
-				
-				
+
+
                 <div>
-                    <h2 >内容导航</h2>
+                    <h2>内容导航</h2>
                     <ul>
-			<li><a href="index.html">个人简介</a></li>
-			<li><a href="paper.html">论文</a></li>
-			<li><a href="project.html">项目</a></li>
-			<li><a href="teaching">教学</a></li>
-			<li><a href="stu.html">学生</a></li>
-		    </ul>
+                        <li><a href="index.html">个人简介</a></li>
+                        <li><a href="paper.html">论文</a></li>
+                        <li><a href="project.html">项目</a></li>
+                        <li><a href="teaching">教学</a></li>
+                        <li><a href="stu.html">学生</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
         <article class="page" itemscope="" style="z-index: 0;max-width: 900px;">
-		
-				
+
+
 
             <div id="main2">
-			
-               
+
+
 
                 <div id="publications">
 
-		    <h3>2025级</h3>
-		            <ul class=space_list>
-			                  <li> 姓名：魏来</li> 
-                    </ul>	
-					<ul class=space_list>
-			                  <li> 姓名：陈聪慧</li> 
-                    </ul>	
+                    <h3>学生名单</h3>
 
-		    <h3>2024级</h3>
-		            <ul class=space_list>
-			                  <li> 姓名：王旭帅</li> 
-                    </ul>
-                    <ul class=space_list>
-			                  <li> 姓名：彭钰</li> 
-                    </ul>
-                    <ul class=space_list>
-			                  <li> 姓名：李昀昊</li> 
-			                  <li> 联系方式：lyh1658954989@163.com</li>
-                    </ul>
-                    <ul class=space_list>
-			                  <li> 姓名：张朔</li> 
-			                  <li> 联系方式：360490705@qq.com</li>
-                    </ul>
+                    <div class="stu-table-wrap">
+                        <table class="stu-table">
+                            <thead>
+                                <tr>
+                                    <th class="col-name" style="width:22%">姓名</th>
+                                    <th class="col-year" style="width:14%">入学年份</th>
+                                    <th style="width:32%">联系方式</th>
+                                    <th class="col-extra" style="width:32%">毕业去向</th>
+                                </tr>
+                            </thead>
 
+                            <tbody>
+                                <tr class="year-row">
+                                    <td colspan="4">2025 级</td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td class="col-name">魏来</td>
+                                    <td class="col-year">2025</td>
+                                    <td class="col-contact">—</td>
+                                    <td class="col-extra">在读</td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td class="col-name">陈聪慧</td>
+                                    <td class="col-year">2025</td>
+                                    <td class="col-contact">—</td>
+                                    <td class="col-extra">在读</td>
+                                </tr>
+                            </tbody>
 
-		    <h3>2023级</h3>
-                    <ul class=space_list>
-			                  <li> 姓名：唐应霞</li> 
-			                  <li> 联系方式：yxiatang@163.com</li>
-							  <li> 毕业去向：山推建友</li>
-                    </ul>
+                            <tbody>
+                                <tr class="year-row">
+                                    <td colspan="4">2024 级</td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td class="col-name">王旭帅</td>
+                                    <td class="col-year">2024</td>
+                                    <td class="col-contact">—</td>
+                                    <td class="col-extra">在读</td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td class="col-name">彭钰</td>
+                                    <td class="col-year">2024</td>
+                                    <td class="col-contact">—</td>
+                                    <td class="col-extra">在读</td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td class="col-name">李昀昊</td>
+                                    <td class="col-year">2024</td>
+                                    <td class="col-contact">lyh1658954989@163.com</td>
+                                    <td class="col-extra">在读</td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td class="col-name">张朔</td>
+                                    <td class="col-year">2024</td>
+                                    <td class="col-contact">360490705@qq.com</td>
+                                    <td class="col-extra">在读</td>
+                                </tr>
+                            </tbody>
 
-		    <h3>2022级</h3>
-                    <ul class=space_list>
-			                  <li> 姓名：魏衍宣</li> 
-			                <li> 联系方式：yanxuan_wei@163.com</li>
-			    		    <li> 毕业去向：山东大学</li> 
-                    </ul>
+                            <tbody>
+                                <tr class="year-row">
+                                    <td colspan="4">2023 级</td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td class="col-name">唐应霞</td>
+                                    <td class="col-year">2023</td>
+                                    <td class="col-contact">yxiatang@163.com</td>
+                                    <td class="col-extra">山推建友</td>
+                                </tr>
+                            </tbody>
 
-		    <h3>2021级</h3>
-                    <ul class=space_list>
-			                  <li> 姓名：杜明森</li> 
-			                <li> 联系方式：mingsendu@163.com</li>
-			    		<li> 毕业去向：山东大学</li> 
-                    </ul>
-					
+                            <tbody>
+                                <tr class="year-row">
+                                    <td colspan="4">2022 级</td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td class="col-name">魏衍宣</td>
+                                    <td class="col-year">2022</td>
+                                    <td class="col-contact">yanxuan_wei@163.com</td>
+                                    <td class="col-extra">山东大学</td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="year-row">
+                                    <td colspan="4">2021 级</td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td class="col-name">杜明森</td>
+                                    <td class="col-year">2021</td>
+                                    <td class="col-contact">mingsendu@163.com</td>
+                                    <td class="col-extra">山东大学</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
-				
-				
-				
-				
-                
-              
-				
+
+
+
+
             </div>
         </article>
     </div>
