@@ -25,7 +25,7 @@
 
         .stu-table {
             width: 100%;
-            min-width: 560px;
+            min-width: 500px;
             border-collapse: collapse;
             font-size: 15px;
             border: 1px solid #d9e2ec;
@@ -38,7 +38,7 @@
             background: #34495e;
             color: #ffffff;
             text-align: left;
-            padding: 11px 14px;
+            padding: 12px 16px;
             font-weight: 600;
             font-size: 15px;
             white-space: nowrap;
@@ -50,9 +50,9 @@
             text-align: center;
         }
 
-        /* 单元格 */
+        /* 数据单元格 */
         .stu-table td {
-            padding: 9px 14px;
+            padding: 10px 16px;
             border-bottom: 1px solid #e6ecf2;
             vertical-align: middle;
             line-height: 1.6;
@@ -68,18 +68,22 @@
             text-align: center;
         }
 
-        /* 入学年份分隔行 */
+        /* ===== 入学年份分隔行：醒目样式 ===== */
         .stu-table tr.year-row td {
-            background: #eaf3fb;
-            color: #1f4e79;
+            background: #1f4e79;            /* 深蓝背景 */
+            color: #ffffff;                 /* 白色文字 */
             font-weight: 700;
-            letter-spacing: 1px;
-            padding: 8px 14px;
-            border-top: 3px solid #b8d4ea;
-            border-bottom: 1px solid #b8d4ea;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-align: center;
+            padding: 10px 16px;
+            border-top: 3px solid #0d2b45;
+            border-bottom: 3px solid #0d2b45;
+            border-left: 6px solid #e67e22; /* 左侧橙色竖条 */
         }
 
-        .stu-table tbody tr.year-row:first-child td {
+        /* 第一组分隔行去掉顶部粗边框，避免与表头重叠 */
+        .stu-table tbody:first-of-type tr.year-row td {
             border-top: none;
         }
 
@@ -97,23 +101,21 @@
             background-color: #e3f1ff;
         }
 
-        /* 联系方式列使用等宽一点的字体，便于阅读邮箱 */
-        .stu-table td.col-contact {
-            color: #35617f;
-            font-size: 14px;
-            word-break: break-all;
-        }
-
         /* 小屏幕适配 */
         @media (max-width: 640px) {
             .stu-table {
                 font-size: 13px;
-                min-width: 480px;
+                min-width: 400px;
             }
 
             .stu-table thead th,
             .stu-table td {
-                padding: 7px 8px;
+                padding: 8px 10px;
+            }
+
+            .stu-table tr.year-row td {
+                font-size: 14px;
+                padding: 8px 10px;
             }
         }
     </style>
@@ -187,93 +189,88 @@
                         <table class="stu-table">
                             <thead>
                                 <tr>
-                                    <th class="col-name" style="width:22%">姓名</th>
-                                    <th class="col-year" style="width:14%">入学年份</th>
-                                    <th style="width:32%">联系方式</th>
-                                    <th class="col-extra" style="width:32%">毕业去向</th>
+                                    <th class="col-name" style="width:28%">姓名</th>
+                                    <th class="col-year" style="width:18%">入学年份</th>
+                                    <th class="col-extra" style="width:54%">毕业去向</th>
                                 </tr>
                             </thead>
 
+                            <!-- 2025 级 -->
                             <tbody>
                                 <tr class="year-row">
-                                    <td colspan="4">2025 级</td>
+                                    <td colspan="3">2025 级</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">魏来</td>
                                     <td class="col-year">2025</td>
-                                    <td class="col-contact">—</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">陈聪慧</td>
                                     <td class="col-year">2025</td>
-                                    <td class="col-contact">—</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
                             </tbody>
 
+                            <!-- 2024 级 -->
                             <tbody>
                                 <tr class="year-row">
-                                    <td colspan="4">2024 级</td>
+                                    <td colspan="3">2024 级</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">王旭帅</td>
                                     <td class="col-year">2024</td>
-                                    <td class="col-contact">—</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">彭钰</td>
                                     <td class="col-year">2024</td>
-                                    <td class="col-contact">—</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">李昀昊</td>
                                     <td class="col-year">2024</td>
-                                    <td class="col-contact">lyh1658954989@163.com</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">张朔</td>
                                     <td class="col-year">2024</td>
-                                    <td class="col-contact">360490705@qq.com</td>
                                     <td class="col-extra">在读</td>
                                 </tr>
                             </tbody>
 
+                            <!-- 2023 级 -->
                             <tbody>
                                 <tr class="year-row">
-                                    <td colspan="4">2023 级</td>
+                                    <td colspan="3">2023 级</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">唐应霞</td>
                                     <td class="col-year">2023</td>
-                                    <td class="col-contact">yxiatang@163.com</td>
                                     <td class="col-extra">山推建友</td>
                                 </tr>
                             </tbody>
 
+                            <!-- 2022 级 -->
                             <tbody>
                                 <tr class="year-row">
-                                    <td colspan="4">2022 级</td>
+                                    <td colspan="3">2022 级</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">魏衍宣</td>
                                     <td class="col-year">2022</td>
-                                    <td class="col-contact">yanxuan_wei@163.com</td>
                                     <td class="col-extra">山东大学</td>
                                 </tr>
                             </tbody>
 
+                            <!-- 2021 级 -->
                             <tbody>
                                 <tr class="year-row">
-                                    <td colspan="4">2021 级</td>
+                                    <td colspan="3">2021 级</td>
                                 </tr>
                                 <tr class="data-row">
                                     <td class="col-name">杜明森</td>
                                     <td class="col-year">2021</td>
-                                    <td class="col-contact">mingsendu@163.com</td>
                                     <td class="col-extra">山东大学</td>
                                 </tr>
                             </tbody>
