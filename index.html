@@ -101,19 +101,39 @@
             border: 1px solid #d9e2ec;
             border-left: 5px solid #1f4e79;
             border-radius: 6px;
-            padding: 20px 26px;
+            padding: 22px 28px;
             margin-bottom: 2.5em;
-            line-height: 1.85;
+            line-height: 1.9;
             color: #22303f;
             font-size: 15px;
         }
 
         .bio-card p {
-            margin-bottom: 12px;
+            margin-bottom: 14px;
+            text-align: justify;
         }
 
         .bio-card p:last-child {
             margin-bottom: 0;
+        }
+
+        .bio-card .bio-keywords {
+            margin-top: 14px;
+            padding-top: 12px;
+            border-top: 1px dashed #cbd9e6;
+        }
+
+        .bio-card .bio-keywords .kw {
+            display: inline-block;
+            background: #eaf3fb;
+            color: #1f4e79;
+            border: 1px solid #b8d4ea;
+            border-radius: 12px;
+            padding: 2px 12px;
+            font-size: 13px;
+            margin: 3px 6px 3px 0;
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
 
         /* 章节标题 */
@@ -204,11 +224,21 @@
                 <div id="biography">
                     <h2 class="section-title">个人简介</h2>
                     <div class="bio-card">
-                        <p>山东师范大学计算机与人工智能学院副教授、硕士生导师。2017年毕业于山东大学软件工程专业，获工学博士学位。2018年加入山东师范大学信息科学与工程学院。</p>
-                        <p>中国人工智能学会终身会员，中国计算机学会会员，中国计算机学会青年科技论坛济南分论坛委员，山东计算机学会数字媒体与艺术专委会委员。担任 <em>Frontiers in Molecular Biosciences</em> 期刊副主编，<em>Information Processing &amp; Management</em>、<em>Discover Artificial Intelligence</em>、<em>Journal of Data Technologies and Engineering</em> 等期刊的编委会成员，<em>Entropy</em> 客座编辑。</p>
-                        <p>主要从事时间序列分析、人工智能、大数据等方面的理论研究与科研开发工作；主持科技部创新方法工作专项（课题）、山东省青年基金，作为骨干成员参与国家重点研发计划、国家自然科学基金等课题；申请发明专利10余项，发表学术论文50余篇。</p>
-                        <p>曾获 ACM 济南新星奖、山东人工智能科学技术奖-自然科学奖、山东计算机学会自然科学二等奖、服务计算协会杰出学生奖、萨师煊优秀学生论文奖等科研奖励。担任 IEEE TPAMI、TKDE、TIP、TCYB、TAI、TII，ACM TKDD、TIST，DMKD 等领域顶刊的审稿人。</p>
-                        <p>讲授本科课程《软件工程》、《软件设计与体系结构》、《信息检索技术》、《Java Programming（双语）》等。</p>
+                        <p>嵇存，山东师范大学计算机与人工智能学院副教授、硕士生导师。2017年获山东大学软件工程专业工学博士学位，2018年加入山东师范大学。主要从事<strong>时间序列分析、人工智能与大数据</strong>研究，聚焦<strong>时间序列分类、Shapelet 挖掘与时序特征表示</strong>。</p>
+
+                        <p>主持科技部创新方法工作专项课题、山东省自然科学基金青年项目、山东省重点实验室联合基金、教育部数字媒体技术教育部工程研究中心开放课题等多项课题；参与国家重点研发计划、国家自然科学基金等项目。研究成果发表于 <strong>ACM TKDD</strong>、<strong>IEEE TII</strong>、<strong>KBS</strong>、<strong>NN</strong> 等领域重要期刊与会议，累计发表论文 50 余篇，申请发明专利 10 余项。</p>
+
+                        <p>任中国人工智能学会终身会员、中国计算机学会会员、ACM济南执行委员、中国计算机学会青年科技论坛济南分论坛委员、山东计算机学会数字媒体与艺术专委会委员。担任 <em>Frontiers in Molecular Biosciences</em> 副主编，<em>Information Processing &amp; Management</em>、<em>Discover Artificial Intelligence</em>、<em>Journal of Data Technologies and Engineering</em> 等期刊编委，<em>Journal of Data Science and Intelligent Systems</em> 青年编委，<em>Entropy</em> 客座编辑；长期担任 IEEE TPAMI、TKDE、TIP、TCYB、TAI、TII，ACM TKDD、TIST，DMKD 等领域顶级期刊审稿人，多次担任国际会议 Session Chair。</p>
+
+                        <p>主讲《软件工程》《软件设计与体系结构》《信息检索技术》《Java Programming（双语）》等本科课程；指导研究生在研究生电子设计竞赛、中国研究生人工智能创新大赛等赛事中获奖，获山东省研究生教学成果奖、山东师范大学研究生教学成果特等奖、本科教学成果奖一等奖等教学奖励。曾获 ACM 济南新星奖、山东人工智能科学技术奖-自然科学奖、山东计算机学会自然科学二等奖、服务计算协会杰出学生奖、萨师煊优秀学生论文奖等科研奖励。</p>
+
+                        <div class="bio-keywords">
+                            <span class="kw">时间序列分类</span>
+                            <span class="kw">Shapelet 挖掘</span>
+                            <span class="kw">时序特征表示</span>
+                            <span class="kw">人工智能</span>
+                            <span class="kw">大数据分析</span>
+                        </div>
                     </div>
                 </div>
 
@@ -291,45 +321,33 @@
                                     <td class="col-content">Journal of Data Technologies and Engineering</td>
                                 </tr>
 
-                                <!-- Reviewer -->
+                                <!-- 青年编委 -->
                                 <tr class="data-row">
-                                    <td class="col-year color-b" rowspan="31">审稿人</td>
-                                    <td class="col-content">Data Mining and Knowledge Discovery</td>
+                                    <td class="col-year color-b" rowspan="1">青年编委</td>
+                                    <td class="col-content">Journal of Data Science and Intelligent Systems</td>
                                 </tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Pattern Analysis and Machine Intelligence</td></tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Knowledge and Data Engineering</td></tr>
-                                <tr class="data-row"><td class="col-content">ACM Transactions on Knowledge Discovery from Data</td></tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Image Processing</td></tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Artificial Intelligence</td></tr>
-                                <tr class="data-row"><td class="col-content">ACM Transactions on Intelligent Systems and Technology</td></tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Industrial Informatics</td></tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Affective Computing</td></tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Cybernetics</td></tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Systems, Man and Cybernetics: Systems</td></tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Neural Networks and Learning Systems</td></tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Circuits and Systems I: Regular Papers</td></tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Automation Science and Engineering</td></tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Emerging Topics in Computational Intelligence</td></tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Human-Machine Systems</td></tr>
-                                <tr class="data-row"><td class="col-content">IEEE Transactions on Neural Systems and Rehabilitation Engineering</td></tr>
-                                <tr class="data-row"><td class="col-content">Robotics and Computer-Integrated Manufacturing</td></tr>
-                                <tr class="data-row"><td class="col-content">Advanced Engineering Informatics</td></tr>
-                                <tr class="data-row"><td class="col-content">Information Processing and Management</td></tr>
-                                <tr class="data-row"><td class="col-content">Artificial Intelligence In Medicine</td></tr>
-                                <tr class="data-row"><td class="col-content">Expert Systems With Applications</td></tr>
-                                <tr class="data-row"><td class="col-content">Information Systems</td></tr>
-                                <tr class="data-row"><td class="col-content">Information Fusion</td></tr>
-                                <tr class="data-row"><td class="col-content">Engineering Applications of Artificial Intelligence</td></tr>
-                                <tr class="data-row"><td class="col-content">International Journal of Intelligent Systems</td></tr>
-                                <tr class="data-row"><td class="col-content">Biomedical Signal Processing and Control</td></tr>
-                                <tr class="data-row"><td class="col-content">Knowledge and Information Systems</td></tr>
-                                <tr class="data-row"><td class="col-content">Measurement</td></tr>
-                                <tr class="data-row"><td class="col-content">Journal of Biomedical and Health Informatics</td></tr>
-                                <tr class="data-row"><td class="col-content">International Journal of Computational Intelligence Systems</td></tr>
+
+                                <!-- Reviewer（按出版社合并，使用缩写） -->
+                                <tr class="data-row">
+                                    <td class="col-year color-a" rowspan="5">审稿人</td>
+                                    <td class="col-content"><strong>IEEE：</strong>TPAMI, TKDE, TIP, TAI, TII, TAFFC, TCYB, TSMC, TNNLS, TCSI, TASE, TETCI, THMS, TNSRE, JBHI</td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td class="col-content"><strong>ACM：</strong>TKDD, TIST</td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td class="col-content"><strong>Elsevier：</strong>IPM, ESWA, IF, IS, Measurement, BSPC, EAAI, AEI, RCIM, AIMM</td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td class="col-content"><strong>Springer：</strong>DMKD, KAIS, IJCIS</td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td class="col-content"><strong>Wiley：</strong>IJIS</td>
+                                </tr>
 
                                 <!-- Organizer -->
                                 <tr class="data-row">
-                                    <td class="col-year color-a" rowspan="2">组织者</td>
+                                    <td class="col-year color-b" rowspan="2">组织者</td>
                                     <td class="col-content">ICBDT 2023 · Session Chair</td>
                                 </tr>
                                 <tr class="data-row">
